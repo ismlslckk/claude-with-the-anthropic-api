@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Write a Python function that parses an AWS ARN string and returns a dictionary with its components (partition, service, region, account-id, and resource)"
+  },
+  {
+    "task": "Create a JSON IAM policy that allows read-only access to a specific S3 bucket named 'my-data-bucket' for objects with the prefix 'reports/'"
+  },
+  {
+    "task": "Write a regex pattern that validates AWS Access Key IDs (must start with 'AKIA' or 'ASIA' followed by 16 alphanumeric characters)"
+  }
+]
