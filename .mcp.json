@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "nutrition": {
+      "command": "${CLAUDE_PROJECT_DIR}/mcp/.venv/bin/python",
+      "args": [
+        "${CLAUDE_PROJECT_DIR}/mcp/nutrition_server.py"
+      ]
+    }
+  }
+}
