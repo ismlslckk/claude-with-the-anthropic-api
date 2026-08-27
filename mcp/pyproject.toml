@@ -1,0 +1,11 @@
+[project]
+name = "nutrition-mcp"
+version = "0.1.0"
+description = "FastMCP nutrition lookup server for the diabetes diet workflow"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.8.0,<2",
+    "python-dotenv>=1.1.0",
+    "certifi>=2024.0.0",
+]
