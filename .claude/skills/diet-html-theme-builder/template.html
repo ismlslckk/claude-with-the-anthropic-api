@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly diet guide</title>
+  <style>
+    :root {
+      --ink: #1b2a2f;
+      --muted: #5b6b70;
+      --bg: #f4f7f5;
+      --card: #ffffff;
+      --header: #0f4c5c;
+      --accent: #e36414;
+      --line: #d7e0dc;
+      --warn-bg: #fff3cd;
+      --warn-ink: #5c4813;
+      --warn-line: #e2c56b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+    header {
+      background: var(--header);
+      color: #fff;
+      padding: 28px 20px 24px;
+    }
+    header h1 { margin: 0 0 6px; font-size: 1.8rem; }
+    header p { margin: 0; opacity: 0.9; }
+    main { max-width: 880px; margin: 0 auto; padding: 24px 16px 48px; }
+    .disclaimer {
+      background: var(--warn-bg);
+      color: var(--warn-ink);
+      border: 1px solid var(--warn-line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 0 0 20px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(15, 76, 92, 0.08);
+      padding: 16px 18px;
+      margin: 0 0 16px;
+    }
+    h2 {
+      margin: 28px 0 12px;
+      padding-left: 10px;
+      border-left: 4px solid var(--header);
+      font-size: 1.25rem;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px 6px; text-align: left; vertical-align: top; }
+    th { background: var(--header); color: #fff; }
+    .chip {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 0.8rem;
+      font-family: system-ui, sans-serif;
+    }
+    footer {
+      max-width: 880px;
+      margin: 0 auto 40px;
+      padding: 0 16px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    a { color: var(--header); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{TITLE}}</h1>
+    <p>{{SUBTITLE}}</p>
+  </header>
+  <main>
+    <section class="disclaimer">{{DISCLAIMER}}</section>
+    <section class="card">{{PROFILE}}</section>
+    <h2>How to use this week</h2>
+    <section class="card">{{HOW_TO}}</section>
+    <h2>Daily schedule</h2>
+    {{DAYS}}
+    <h2>Grocery list</h2>
+    <section class="card">{{GROCERIES}}</section>
+    <h2>Recipes</h2>
+    <section class="card">{{RECIPES}}</section>
+    <h2>Safety</h2>
+    <section class="card">{{SAFETY}}</section>
+    <h2>Sources</h2>
+    <section class="card">{{SOURCES}}</section>
+  </main>
+  <footer>Educational workflow output. Not medical advice.</footer>
+</body>
+</html>
