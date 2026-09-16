@@ -1,0 +1,57 @@
+{
+  "run_id": "02-type1-athlete",
+  "status": "completed",
+  "created_at": "2026-08-18T15:50:00+00:00",
+  "updated_at": "2026-08-19T12:06:59+00:00",
+  "input_summary": "Type 1, insulin pump, endurance athlete, 3000 kcal, 350-400 g carb, hypo around long runs, no budget",
+  "execution_plan": [
+    "requirements-formalizer",
+    "guideline-researcher",
+    "nutrition-lookup",
+    "meal-planner",
+    "recipe-nutritionist",
+    "grocery-planner",
+    "glucose-timing-advisor",
+    "validator",
+    "weekly-plan-builder",
+    "html-builder"
+  ],
+  "skipped": [
+    "budget-aggregator"
+  ],
+  "completed": [
+    "requirements-formalizer",
+    "guideline-researcher",
+    "nutrition-lookup",
+    "meal-planner",
+    "recipe-nutritionist",
+    "grocery-planner",
+    "glucose-timing-advisor",
+    "validator",
+    "weekly-plan-builder",
+    "html-builder"
+  ],
+  "failed": [],
+  "retries": {},
+  "gates": {
+    "passed": true,
+    "updated_at": "2026-08-18T17:25:00+00:00"
+  },
+  "approval": {
+    "status": "approved",
+    "updated_at": "2026-08-18T18:10:00+00:00"
+  },
+  "artifacts": {
+    "requirements-formalizer": "artifacts/requirements.md",
+    "guideline-researcher": "artifacts/guidelines.md",
+    "nutrition-lookup": "artifacts/food-data.md",
+    "meal-planner": "artifacts/meal-plan.md",
+    "recipe-nutritionist": "artifacts/recipes.md",
+    "grocery-planner": "artifacts/grocery-list.md",
+    "glucose-timing-advisor": "artifacts/timing.md",
+    "validator": "artifacts/validation.md",
+    "weekly-plan-builder": "artifacts/weekly-plan.md",
+    "html-builder": "diet-guide.html"
+  },
+  "final_output": "diet-guide.html"
+}
