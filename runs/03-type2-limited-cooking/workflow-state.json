@@ -1,0 +1,57 @@
+{
+  "run_id": "03-type2-limited-cooking",
+  "status": "completed",
+  "created_at": "2026-08-18T18:20:00+00:00",
+  "updated_at": "2026-08-19T12:07:51+00:00",
+  "input_summary": "Type 2, metformin, age 74, microwave/one-pot, sodium <2000 mg, $50 budget, 1500 kcal, 120-150 g carb",
+  "execution_plan": [
+    "requirements-formalizer",
+    "guideline-researcher",
+    "nutrition-lookup",
+    "meal-planner",
+    "recipe-nutritionist",
+    "grocery-planner",
+    "budget-aggregator",
+    "validator",
+    "weekly-plan-builder",
+    "html-builder"
+  ],
+  "skipped": [
+    "glucose-timing-advisor"
+  ],
+  "completed": [
+    "requirements-formalizer",
+    "guideline-researcher",
+    "nutrition-lookup",
+    "meal-planner",
+    "recipe-nutritionist",
+    "grocery-planner",
+    "budget-aggregator",
+    "validator",
+    "weekly-plan-builder",
+    "html-builder"
+  ],
+  "failed": [],
+  "retries": {},
+  "gates": {
+    "passed": true,
+    "updated_at": "2026-08-18T19:45:00+00:00"
+  },
+  "approval": {
+    "status": "approved",
+    "updated_at": "2026-08-18T20:05:00+00:00"
+  },
+  "artifacts": {
+    "requirements-formalizer": "artifacts/requirements.md",
+    "guideline-researcher": "artifacts/guidelines.md",
+    "nutrition-lookup": "artifacts/food-data.md",
+    "meal-planner": "artifacts/meal-plan.md",
+    "recipe-nutritionist": "artifacts/recipes.md",
+    "grocery-planner": "artifacts/grocery-list.md",
+    "budget-aggregator": "artifacts/budget.md",
+    "validator": "artifacts/validation.md",
+    "weekly-plan-builder": "artifacts/weekly-plan.md",
+    "html-builder": "diet-guide.html"
+  },
+  "final_output": "diet-guide.html"
+}

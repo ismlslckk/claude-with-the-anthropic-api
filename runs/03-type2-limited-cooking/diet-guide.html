@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly diet guide — low-effort type 2 pattern</title>
+  <style>
+    :root {
+      --ink: #1b2a2f; --muted: #5b6b70; --bg: #f4f7f5; --card: #ffffff;
+      --header: #0f4c5c; --accent: #e36414; --line: #d7e0dc;
+      --warn-bg: #fff3cd; --warn-ink: #5c4813; --warn-line: #e2c56b;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink); background: var(--bg); line-height: 1.5; }
+    header { background: var(--header); color: #fff; padding: 28px 20px 24px; }
+    header h1 { margin: 0 0 6px; font-size: 1.8rem; }
+    header p { margin: 0; opacity: 0.9; }
+    main { max-width: 880px; margin: 0 auto; padding: 24px 16px 48px; }
+    .disclaimer { background: var(--warn-bg); color: var(--warn-ink); border: 1px solid var(--warn-line); border-radius: 12px; padding: 14px 16px; margin: 0 0 20px; }
+    .card { background: var(--card); border-radius: 12px; box-shadow: 0 1px 3px rgba(15, 76, 92, 0.08); padding: 16px 18px; margin: 0 0 16px; }
+    h2 { margin: 28px 0 12px; padding-left: 10px; border-left: 4px solid var(--header); font-size: 1.25rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px 6px; text-align: left; vertical-align: top; }
+    th { background: var(--header); color: #fff; }
+    .chip { display: inline-block; background: var(--accent); color: #fff; border-radius: 999px; padding: 2px 8px; font-size: 0.8rem; font-family: system-ui, sans-serif; }
+    footer { max-width: 880px; margin: 0 auto 40px; padding: 0 16px; color: var(--muted); font-size: 0.85rem; }
+    a { color: var(--header); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Weekly diet guide</h1>
+    <p>Low-effort microwave and one-pot pattern · sample run 03</p>
+  </header>
+  <main>
+    <section class="disclaimer">This weekly plan is an educational artifact from an agentic workflow. It is not medical advice, diagnosis, or a substitute for care from a clinician or registered dietitian. Medication must only be changed with a qualified professional.</section>
+    <section class="card">
+      <p><strong>Profile:</strong> Age 74, lives alone, metformin, microwave or one-pot cooking, soft foods, sodium cap 2000 mg.</p>
+      <p><strong>Targets:</strong> about 1500 kcal · <span class="chip">120–150 g carb</span> · grocery cap $50 (estimate ~$38).</p>
+    </section>
+    <h2>How to use this week</h2>
+    <section class="card">
+      <p>Cook two pots once, then reheat. Buy no-salt-added beans. Do not use salted broth cubes. Three meals a day; no required snack.</p>
+    </section>
+    <h2>Daily schedule</h2>
+    <section class="card">
+      <table>
+        <thead><tr><th>Day</th><th>Meals</th><th>Carb / kcal</th></tr></thead>
+        <tbody>
+          <tr><td>1, 3, 5, 7</td><td>Microwave oats · lentil pot · chicken barley + apple</td><td>135 g / ~1520</td></tr>
+          <tr><td>2, 6</td><td>Yogurt · bean bowl · chicken barley</td><td>121 g / ~1470</td></tr>
+          <tr><td>4</td><td>Yogurt · bean bowl · chicken barley + berries</td><td>125 g / ~1490</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <h2>Grocery list</h2>
+    <section class="card">
+      <p>Oats, lentils, no-salt beans, barley, small sourdough, olive oil, frozen berries and vegetables, apples, carrots, chicken, yogurt, milk, eggs.</p>
+    </section>
+    <h2>Recipes</h2>
+    <section class="card">
+      <p>Microwave oats (5 minutes); unsalted lentil stew; chicken barley pot; yogurt and fruit; rinsed bean bowl. All stay within a 20-minute active cook.</p>
+    </section>
+    <h2>Safety</h2>
+    <section class="card">
+      <p>No hypoglycemia rescue protocol (metformin only). Keep meals unsalted. Seek clinical care for poor intake, dizziness, or medication questions.</p>
+    </section>
+    <h2>Sources</h2>
+    <section class="card">
+      <ul>
+        <li><a href="https://www.cdc.gov/diabetes/healthy-eating/index.html">CDC healthy eating</a></li>
+        <li><a href="https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet">FDA sodium in your diet</a></li>
+        <li><a href="https://www.nhs.uk/live-well/eat-well/">NHS eat well</a></li>
+        <li><a href="https://www.ers.usda.gov/data-products/food-price-outlook">USDA ERS food price outlook</a></li>
+        <li><a href="https://world.openfoodfacts.org/">Open Food Facts</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>Educational workflow output. Not medical advice.</footer>
+</body>
+</html>
