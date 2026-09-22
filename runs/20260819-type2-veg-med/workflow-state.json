@@ -1,0 +1,111 @@
+{
+  "run_id": "20260819-type2-veg-med",
+  "status": "running",
+  "created_at": "2026-08-19T14:30:00Z",
+  "updated_at": "2026-08-19T12:28:23+00:00",
+  "intake": {
+    "confirmed": true,
+    "source": "runs/20260819-type2-veg-med/input.md",
+    "needs_glucose_timing": false,
+    "needs_budget": true,
+    "budget_cap_usd_per_week": 80
+  },
+  "execution_plan": [
+    {
+      "stage": 1,
+      "agents": [
+        "requirements-formalizer"
+      ],
+      "mode": "single"
+    },
+    {
+      "stage": 2,
+      "agents": [
+        "guideline-researcher",
+        "nutrition-lookup"
+      ],
+      "mode": "parallel"
+    },
+    {
+      "stage": 3,
+      "agents": [
+        "meal-planner"
+      ],
+      "mode": "single"
+    },
+    {
+      "stage": 4,
+      "agents": [
+        "recipe-nutritionist",
+        "grocery-planner"
+      ],
+      "mode": "parallel"
+    },
+    {
+      "stage": 5,
+      "agents": [
+        "budget-aggregator"
+      ],
+      "mode": "single",
+      "conditional": "needs_budget"
+    },
+    {
+      "stage": 6,
+      "agents": [
+        "validator"
+      ],
+      "mode": "gate"
+    },
+    {
+      "stage": 7,
+      "agents": [
+        "weekly-plan-builder"
+      ],
+      "mode": "single"
+    },
+    {
+      "stage": 8,
+      "agents": [
+        "human-approval"
+      ],
+      "mode": "gate"
+    },
+    {
+      "stage": 9,
+      "agents": [
+        "html-builder"
+      ],
+      "mode": "single",
+      "blocked_until": "approval.md contains status: approved"
+    }
+  ],
+  "skipped": [
+    {
+      "agent": "glucose-timing-advisor",
+      "reason": "needs_glucose_timing: false \u2014 no insulin, no sulfonylureas, no hypoglycemia history"
+    }
+  ],
+  "completed": [
+    "requirements-formalizer"
+  ],
+  "current_stage": 2,
+  "in_progress": [
+    "guideline-researcher",
+    "nutrition-lookup"
+  ],
+  "failed": [],
+  "retries": {},
+  "artifact_validator": {
+    "artifacts/requirements.md": {
+      "structural_pass": true,
+      "citation_pass": true
+    }
+  },
+  "gates": {},
+  "approval": {
+    "status": "not_requested"
+  },
+  "artifacts": {
+    "requirements-formalizer": "artifacts/requirements.md"
+  }
+}
